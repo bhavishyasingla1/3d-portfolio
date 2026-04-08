@@ -15,7 +15,7 @@ import { blogPosts, blogCategories } from "../src/data/blogData.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
-const SITE_URL = "https://bhavishyasingla.com";
+const SITE_URL = "https://bhavishyasingla.in";
 const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
 // ─── sitemap.xml ────────────────────────────────────────────────
