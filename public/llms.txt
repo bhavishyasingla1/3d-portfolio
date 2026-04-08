@@ -1,0 +1,137 @@
+# Bhavishya Singla — AI Content Creator & Digital Marketing Specialist
+
+> Personal portfolio of Bhavishya Singla, Computer Engineering student at Thapar Institute (2023–2027). Creator of AI content systems with 17,000+ LinkedIn followers, 6,000+ newsletter subscribers, and 285,000+ podcast views. Specializes in AI-driven content, SEO optimization, and digital marketing for brands.
+
+## Quick Summary
+
+Bhavishya Singla is a 17-year-old computer engineering student who builds AI content and digital projects. He creates practical AI content for students and creators, runs digital marketing campaigns, and develops websites with SEO optimization. His work sits at the intersection of AI, content creation, and digital marketing.
+
+## Core Expertise
+
+### AI & Content Creation
+- AI writing tools and workflows
+- Content strategy and distribution systems
+- Newsletter automation (AI This Week - 6,000+ subscribers)
+- Podcast production (Mindscape Expansion - 285,000+ views)
+- Social media content systems (LinkedIn: 17,000+ followers)
+
+### Digital Marketing & SEO
+- Website building (Framer, React, custom code)
+- SEO optimization and keyword strategy
+- Google Business Profile management
+- Analytics and performance tracking
+- Social media marketing and growth
+
+### Technical Skills
+- Programming: JavaScript, TypeScript, React, Next.js
+- AI Tools: ChatGPT, Claude, various AI writing assistants
+- Web Technologies: HTML5, CSS3, responsive design
+- Analytics: Google Analytics, SEO tools
+- Content Management: Newsletter platforms, podcast hosting
+
+## Contact Information
+
+- **Primary Email**: say@hibhavishya.in
+- **LinkedIn**: https://www.linkedin.com/in/bhavishyasingla1/
+- **GitHub**: https://github.com/bhavishyasingla1/
+- **YouTube**: https://www.youtube.com/@bhavishyasingla1
+- **Instagram**: https://instagram.com/bhavishyasingla1
+- **Newsletter**: https://www.linkedin.com/newsletters/7353859555715436544/
+- **Podcast**: https://www.youtube.com/@bhavishyasingla1/podcasts
+- **Resume**: /Profile.pdf
+
+## Professional Experience
+
+### Current Role
+**Marketing & Growth Intern** - Codju Technologies (2025 - Present)
+- Running company website, SEO, and social channels
+- Building AI content systems (videos, newsletters, YouTube)
+- Shipping AI-driven workflows and site optimizations
+
+### Previous Experience
+**Digital Marketing Intern** - brandMongo (2025-2026)
+- Built AI content systems and digital experiments
+- Created Framer websites with SEO-focused structure
+- Ran keyword experiments and AI tool testing
+
+**Marketing & Branding** - AuraFlo (2025)
+- Created pitch decks and brand positioning
+- Represented at Circuitpreneur (Top 4 finish)
+- Handled messaging and team communication
+
+## Education & Certifications
+
+### Education
+**B.Tech Computer Engineering** - Thapar Institute of Engineering and Technology (2023-2027)
+- Focus: AI, digital systems, entrepreneurship
+- Location: Punjab, India
+
+### Professional Certifications
+- **McKinsey Forward** - Business and leadership program
+- **GitHub Foundations** - Software development fundamentals
+- **Microsoft Generative AI** - AI implementation and best practices
+
+## Leadership & Recognition
+
+### Professional Leadership
+- **Microsoft Student Ambassador (Gold)** - Technical community leadership
+- **Innovation Ambassador** - IIC TIET (Joint Secretary)
+- **Senior Coordinator** - CTD TIET
+
+### Community Impact
+- Mentoring students in AI and digital marketing
+- Speaking at technology and career events
+- Building educational content for AI literacy
+
+## Services Offered
+
+### For Businesses
+- Website development and optimization
+- SEO strategy and implementation
+- AI content system design
+- Digital marketing campaigns
+- Social media growth strategies
+
+### For Individuals
+- AI workflow consultation
+- Personal branding optimization
+- Content strategy development
+- Career guidance in tech
+
+## Portfolio Projects
+
+### Featured Work
+1. **Mindscape Expansion** - Career + AI Podcast (285k+ views)
+2. **LinkedInRank** - LinkedIn Profile Analysis Tool
+3. **Content Ecosystem** - Multi-platform AI content distribution
+4. **Freelance Projects** - Website building and SEO optimization
+
+### Technical Stack
+- **Frontend**: React, Next.js, TypeScript, Framer
+- **Backend**: Node.js, Express
+- **AI Tools**: Various LLMs and AI writing assistants
+- **Analytics**: Google Analytics, SEO tools
+- **Content**: Newsletter platforms, podcast hosting
+
+## Content Philosophy
+
+Bhavishya focuses on practical AI applications that solve real problems. His content emphasizes:
+- Actionable insights over theoretical concepts
+- Real-world examples and case studies
+- Step-by-step implementation guides
+- Honest sharing of failures and learnings
+- Building in public methodology
+
+## Future Goals
+
+- Expand AI content systems to help more creators
+- Develop automated SEO and marketing tools
+- Create educational resources for AI literacy
+- Build a community of AI-powered creators
+- Launch SaaS products for content optimization
+
+## Additional Context
+
+This portfolio serves as both a professional showcase and an experimental platform for testing new AI tools, marketing strategies, and web technologies. Bhavishya regularly shares insights about his experiments and learnings through his newsletter and podcast.
+
+For collaboration opportunities or inquiries, reach out via email or LinkedIn.

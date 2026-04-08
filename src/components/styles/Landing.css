@@ -242,6 +242,7 @@ h2.landing-info-h2 {
   font-weight: 600;
   position: relative;
   margin-left: -5px;
+  white-space: nowrap;
 }
 
 .landing-h2-2 {
@@ -393,5 +394,22 @@ h2.landing-info-h2 {
 
   h2.landing-info-h2 {
     font-size: 75px;
+  }
+}
+
+/* Mobile-only enhancements (does not affect min-width:768px and above) */
+@media screen and (max-width: 767px) {
+  .landing-circle1 {
+    width: 200px;
+    height: 200px;
+    filter: blur(40px);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .landing-circle1 {
+    width: 150px;
+    height: 150px;
+    filter: blur(30px);
   }
 }

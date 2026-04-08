@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
-
 :root {
   font-family: "Geist", sans-serif;
 
@@ -133,5 +131,21 @@ body {
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;
+  }
+}
+
+/* Safe mobile enhancements — no layout overrides */
+@media (hover: none) and (pointer: coarse) {
+  /* Faster taps on iOS/Android (removes 300ms delay) */
+  a, button { touch-action: manipulation; }
+}
+
+/* Accessibility: respect user motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

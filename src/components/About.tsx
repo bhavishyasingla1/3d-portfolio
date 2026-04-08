@@ -2,18 +2,18 @@ import "./styles/About.css";
 
 const About = () => {
   return (
-    <div className="about-section" id="about">
+    <section className="about-section" id="about">
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am currently co-founder of CallHQ.ai, building real-time voice AI for
-          businesses. I am a technologist at heart with strong business judgment—
-          I enjoy going from product strategy to hands-on engineering. My background
-          spans leadership at Adobe, founding Broki and CallHQ, and shipping
-          full-stack products end to end.
+          I'm a computer engineering student building AI content and digital
+          projects. 17,000 people follow my work on LinkedIn. 6,000 subscribe
+          to AI This Week, my newsletter on practical AI. I host a podcast on
+          careers and technology—most of what I build sits where storytelling
+          meets systems.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

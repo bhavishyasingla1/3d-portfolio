@@ -28,10 +28,12 @@ const Navbar = () => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
         if (window.innerWidth > 1024) {
-          e.preventDefault();
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
+          if (section) {
+            e.preventDefault();
+            smoother.scrollTo(section, true, "top top");
+          }
         }
       });
     });
@@ -41,18 +43,18 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <div className="header">
+      <nav className="header" role="navigation" aria-label="Main navigation">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          AM
+          BS
         </a>
         <a
-          href="https://www.linkedin.com/in/akashrmalhotra/"
+          href="https://www.linkedin.com/in/bhavishyasingla1/"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"
           rel="noreferrer"
         >
-          linkedin.com/in/akashrmalhotra
+          linkedin.com/in/bhavishyasingla1
         </a>
         <ul>
           <li>
@@ -70,8 +72,18 @@ const Navbar = () => {
               <HoverLinks text="CONTACT" />
             </a>
           </li>
+          <li>
+            <a
+              href="https://hibhavishya.in/"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="disable"
+            >
+              <HoverLinks text="BLOG" />
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
 
       <div className="landing-circle1"></div>
       <div className="landing-circle2"></div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 interface Props {
@@ -11,6 +11,16 @@ interface Props {
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete) {
+      setIsLoaded(true);
+    }
+  }, []);
+
   const handleMouseEnter = async () => {
     if (props.video) {
       setIsVideo(true);
@@ -36,7 +46,18 @@ const WorkImage = (props: Props) => {
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        <img
+          ref={imgRef}
+          src={props.image}
+          alt={props.alt || 'Project showcase'}
+          loading="lazy"
+          decoding="async"
+          onLoad={() => setIsLoaded(true)}
+          style={{
+            opacity: isLoaded ? 1 : 0,
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>

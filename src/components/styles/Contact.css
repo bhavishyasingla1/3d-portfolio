@@ -17,6 +17,7 @@
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-flex h4 {
@@ -28,6 +29,7 @@
 .contact-box {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .contact-flex p {
@@ -57,6 +59,14 @@ a.contact-social {
   display: flex;
   gap: 10px;
   opacity: 0.5;
+}
+
+.contact-credit {
+  margin-top: 30px;
+}
+
+.contact-credit a {
+  color: var(--accentColor);
 }
 
 @media only screen and (max-width: 1600px) {
@@ -112,5 +122,21 @@ a.contact-social {
 
   .contact-container {
     width: calc(100% - 25px);
+  }
+}
+
+/* Small-phone font refinements (well below existing 900px breakpoint) */
+@media only screen and (max-width: 479px) {
+  .contact-section h3 {
+    font-size: 26px;
+  }
+
+  .contact-box h4 {
+    font-size: 16px;
+  }
+
+  .contact-box p {
+    font-size: 13px;
+    line-height: 1.4;
   }
 }

@@ -1,0 +1,67 @@
+# Robots.txt for Bhavishya Singla Portfolio
+# https://bhavishyasingla.in/
+
+User-agent: *
+Allow: /
+
+# Prioritize important pages
+Crawl-delay: 1
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Block unwanted crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Disallow private directories
+Disallow: /models/
+Disallow: /draco/
+Disallow: /src/
+Disallow: /scripts/
+
+# Sitemap
+Sitemap: https://bhavishyasingla.in/sitemap.xml
+
+# LLMs
+# See https://bhavishyasingla.in/llms.txt for LLM-friendly content

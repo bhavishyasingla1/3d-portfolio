@@ -242,3 +242,20 @@
     justify-content: left;
   }
 }
+
+/* Small-phone font refinements (well below existing 600px breakpoint) */
+@media only screen and (max-width: 479px) {
+  .career-section h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .career-info h3 {
+    font-size: 20px;
+  }
+
+  .career-info-box p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

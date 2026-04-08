@@ -5,32 +5,36 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Mindscape Expansion",
+    category: "Career + AI Podcast",
+    tools: "Interviews, Storytelling, 285k+ Views",
+    image: "/images/mindscape expansion.webp",
+    alt: "Mindscape Expansion podcast thumbnail showing career and AI technology discussions with 285,000+ views",
+    link: "https://www.youtube.com/@bhavishyasingla1/podcasts",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "LinkedInRank",
+    category: "LinkedIn Profile Analysis Tool",
+    tools: "AI, SEO Systems, Recruiter Visibility",
+    image: "/images/linkedin rank.webp",
+    alt: "LinkedInRank tool interface showing profile analysis dashboard with SEO optimization metrics",
+    link: "",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Content Ecosystem",
+    category: "AI Content & Multi-platform Distribution",
+    tools: "Newsletter, Videos, Experiments, AI Workflows",
+    image: "/images/ai this week.webp",
+    alt: "AI This Week newsletter interface showcasing multi-platform content distribution and AI-powered workflows",
+    link: "",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Freelance Work",
+    category: "Website Building & SEO Optimization",
+    tools: "Framer, Code, SEO, Google Business Profiles",
+    image: "/images/freelance.webp",
+    alt: "Freelance web development portfolio showing responsive websites with SEO optimization and Google Business integration",
+    link: "",
   },
 ];
 
@@ -61,7 +65,7 @@ const Work = () => {
   }, [currentIndex, goToSlide]);
 
   return (
-    <div className="work-section" id="work">
+    <section className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
           My <span>Work</span>
@@ -115,7 +119,7 @@ const Work = () => {
                     <div className="carousel-image-wrapper">
                       <WorkImage
                         image={project.image}
-                        alt={project.title}
+                        alt={project.alt || project.title}
                         link={project.link}
                       />
                     </div>
@@ -140,7 +144,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

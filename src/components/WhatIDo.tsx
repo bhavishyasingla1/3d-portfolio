@@ -8,20 +8,21 @@ const WhatIDo = () => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
-    if (ScrollTrigger.isTouch) {
+    const isTouchDevice =
+      ScrollTrigger.isTouch || "ontouchstart" in window || window.innerWidth <= 900;
+    const handlers: Array<{ el: HTMLDivElement; fn: () => void }> = [];
+    if (isTouchDevice) {
       containerRef.current.forEach((container) => {
         if (container) {
           container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
+          const fn = () => handleClick(container);
+          container.addEventListener("click", fn);
+          handlers.push({ el: container, fn });
         }
       });
     }
     return () => {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.removeEventListener("click", () => handleClick(container));
-        }
-      });
+      handlers.forEach(({ el, fn }) => el.removeEventListener("click", fn));
     };
   }, []);
   return (
@@ -87,20 +88,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>AI &amp; CONTENT</h3>
+              <h4>Practical AI for Students &amp; Creators</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                17,000+ LinkedIn followers. 6,000+ newsletter subscribers.
+                I write about practical AI, host a podcast on careers, and
+                build content systems that actually reach people.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Channels & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">LinkedIn</div>
+                <div className="what-tags">Newsletter</div>
+                <div className="what-tags">Podcast</div>
+                <div className="what-tags">AI writing</div>
+                <div className="what-tags">Video systems</div>
+                <div className="what-tags">Distribution</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,22 +126,13 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>MARKETING &amp; GROWTH</h3>
+              <h4>SEO, Websites &amp; Digital Platforms</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I build websites, run SEO experiments, and ship digital
+                systems for brands—Framer sites, keyword strategy, analytics.
+                The work is about getting the right things seen.
               </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
-              </div>
               <div className="what-arrow"></div>
             </div>
           </div>
